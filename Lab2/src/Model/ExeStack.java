@@ -1,0 +1,38 @@
+package Model;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class ExeStack<T> implements IExecStack<T>
+{
+    private Deque<T> stack;
+    public ExeStack()
+    {
+        stack = new ArrayDeque<>();
+    }
+    public void push(T el)
+    {
+        stack.addLast(el);
+    }
+    public T pop()
+    {
+        return stack.pop();
+    }
+    public boolean isEmpty()
+    {
+        return stack.size() == 0;
+    }
+
+    @Override
+    public String toString()
+    {
+        StringBuffer buff = new StringBuffer();
+        buff.append("Stack:\n");
+        for (T i : stack)
+        {
+            buff.append(i);
+            buff.append('\n');
+        }
+        return buff.toString();
+    }
+}
