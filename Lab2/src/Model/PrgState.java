@@ -5,13 +5,13 @@ public class PrgState
     private IExecStack<Statement> execStack;
     private IDictionary<String,Integer> symbolT;
     private IList<Integer> list;
-    private Statement rootP;
-    public PrgState(IExecStack<Statement> s, IDictionary<String, Integer> d, IList<Integer> l, Statement statem)
+    private Statement statement;
+    public PrgState(IExecStack<Statement> s, IDictionary<String, Integer> d, IList<Integer> l, Statement st)
     {
         execStack = s;
         symbolT = d;
         list = l;
-        rootP = statem;
+        statement = st;
     }
 
     public IExecStack<Statement> getExecStack()
@@ -29,10 +29,7 @@ public class PrgState
         return list;
     }
 
-    public Statement getRootP()
-    {
-        return rootP;
-    }
+    public Statement getStatement() { return statement; }
 
     public void setExecStack(IExecStack<Statement> execStack)
     {
@@ -49,9 +46,9 @@ public class PrgState
         this.list = l;
     }
 
-    public void setRootP(Statement rootP)
+    public void setStatement(Statement sta)
     {
-        this.rootP = rootP;
+        this.statement = sta;
     }
 
     @Override
@@ -61,8 +58,8 @@ public class PrgState
         buff.append(execStack);
         buff.append(symbolT);
         buff.append(list);
-        buff.append(rootP);
-        buff.append('\n');
+        buff.append(statement);
+        buff.append("\n");
         return buff.toString();
     }
 }

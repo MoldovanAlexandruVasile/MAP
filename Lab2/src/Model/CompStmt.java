@@ -9,6 +9,7 @@ public class CompStmt implements Statement
         second = s;
     }
 
+    @Override
     public PrgState execute(PrgState state)
     {
         state.getExecStack().push(second);
@@ -19,6 +20,6 @@ public class CompStmt implements Statement
     @Override
     public String toString()
     {
-        return "" + first + second;
+        return "" + first + "\n" + second;
     }
 }

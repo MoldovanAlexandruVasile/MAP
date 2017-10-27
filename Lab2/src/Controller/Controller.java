@@ -11,6 +11,7 @@ public class Controller
     }
     public void executeOneStep()
     {
+        System.out.println("One step executed:");
         PrgState ps = ipsr.getCurrentProgram();
         IExecStack<Statement> ex = ps.getExecStack();
         if(! ex.isEmpty())
@@ -19,6 +20,7 @@ public class Controller
             instr.execute(ps);
             System.out.println(ps);
         }
+        System.out.println("----------------------------------------------");
     }
     public void executeAll()
     {
@@ -26,5 +28,6 @@ public class Controller
         IExecStack<Statement> es = ps.getExecStack();
         while(! es.isEmpty())
             executeOneStep();
+        System.out.println("----------------------------------------------");
     }
 }

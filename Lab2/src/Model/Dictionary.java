@@ -30,12 +30,18 @@ public class Dictionary <K, V> implements IDictionary<K, V>
     public String toString()
     {
         StringBuffer buff = new StringBuffer();
-        for(Map.Entry<K,V> dc : dict.entrySet())
+        if(dict.isEmpty())
+            buff.append("Dictionary: EMPTY");
+        else
         {
-            buff.append(dc.getKey());
-            buff.append(" = ");
-            buff.append(dc.getValue());
-            buff.append('\n');
+            buff.append("Dictionary: \n");
+            for (Map.Entry<K, V> dc : dict.entrySet())
+            {
+                buff.append(dc.getKey());
+                buff.append(" = ");
+                buff.append(dc.getValue());
+                buff.append('\n');
+            }
         }
         return buff.toString();
     }

@@ -27,11 +27,15 @@ public class ExeStack<T> implements IExecStack<T>
     public String toString()
     {
         StringBuffer buff = new StringBuffer();
-        buff.append("Stack:\n");
-        for (T i : stack)
+        if(stack.isEmpty())
+            buff.append("Stack: []\n");
+        else
         {
-            buff.append(i);
-            buff.append('\n');
+            buff.append("Stack:\n");
+            for (T i : stack) {
+                buff.append(i);
+                buff.append("\n");
+            }
         }
         return buff.toString();
     }
