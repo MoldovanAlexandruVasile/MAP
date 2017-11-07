@@ -19,13 +19,12 @@ public class PrgState
     private Statement statement;
     private FileData fd;
     private FileTable<Integer,FileData> ft;
-    public PrgState(IExecStack<Statement> s, IDictionary<String, Integer> d, IList<Integer> l, Statement st, FileData fdata, FileTable<Integer, FileData> ftable) throws InterpretorException
+    public PrgState(IExecStack<Statement> s, IDictionary<String, Integer> d, IList<Integer> l, Statement st, FileTable<Integer, FileData> ftable) throws InterpretorException
     {
         execStack = s;
         symbolT = d;
         list = l;
         statement = st;
-        fd = fdata;
         ft = ftable;
     }
 
@@ -61,13 +60,9 @@ public class PrgState
         this.list = l;
     }
 
-    public FileData getFileData() { return fd; }
-
-    public void setFileData(FileData fd) { this.fd = fd; }
-
     public FileTable<Integer, FileData> getFileTable() { return ft; }
 
-    public void setFileTable(FileTable<Integer, FileData> ft) { this.ft = ft; }
+    public void setFileTable(FileTable<Integer, FileData> flt) { ft = flt; }
 
     public void setStatement(Statement sta) { this.statement = sta; }
 

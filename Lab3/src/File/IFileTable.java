@@ -12,6 +12,7 @@ public interface IFileTable<K,V>
     void remove(K key);
     boolean contains(K key);
     V get(K key);
+    V find(K key);
     Iterable<K> getAll();
     Iterable<V> getValues();
 }

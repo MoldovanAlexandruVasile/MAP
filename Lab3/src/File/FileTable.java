@@ -24,10 +24,7 @@ public class FileTable<K, V> implements IFileTable<K, V>
         dict.remove(key);
     }
 
-    public V get(K key)
-    {
-        return dict.get(key);
-    }
+    public V get(K key) { return dict.get(key); }
 
     public Iterable<K> getAll()
     {
@@ -39,8 +36,15 @@ public class FileTable<K, V> implements IFileTable<K, V>
         return dict.values();
     }
 
+    public V find(K key) { return dict.get(key); }
+
     public boolean contains(K key)
     {
         return dict.containsKey(key);
+    }
+
+    @Override
+    public String toString() {
+        return "FileTable{" + "dict=" + dict + '}';
     }
 }

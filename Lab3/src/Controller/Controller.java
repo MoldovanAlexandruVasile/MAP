@@ -35,7 +35,17 @@ public class Controller
         PrgState ps = ipsr.getCurrentProgram();
         IExecStack<Statement> es = ps.getExecStack();
         while(! es.isEmpty())
-            executeOneStep();
+        {
+            try
+            {
+                executeOneStep();
+                ipsr.logPrgStateExec();
+            }
+            catch(InterpretorException e)
+            {
+                System.out.println(e.getMessage());
+            }
+        }
         System.out.println("----------------------------------------------");
     }
 }

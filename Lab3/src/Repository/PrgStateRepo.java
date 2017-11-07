@@ -4,7 +4,6 @@ import Statement.*;
 import Model.*;
 import Exception.*;
 
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -24,12 +23,13 @@ public class PrgStateRepo implements IPrgStateRepo
         return myList.get(0);
     }
 
-
     private String fileName;
+    public PrgStateRepo(String fName) { fileName = fName; }
+
     public void logPrgStateExec() throws InterpretorException
     {
         PrgState state = getCurrentProgram();
-        try (PrintWriter log = new PrintWriter(new BufferedWriter(new FileWriter(fileName, true)));)
+        try (PrintWriter log = new PrintWriter(new BufferedWriter(new FileWriter(fileName, true))))
         {
             log.println("ExeStack:");
             for(Statement st: state.getExecStack().getAll())

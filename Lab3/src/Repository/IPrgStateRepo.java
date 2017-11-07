@@ -4,8 +4,7 @@ import Exception.*;
 
 public interface IPrgStateRepo
 {
-    public void addPrgState(PrgState st);
-    public PrgState getCurrentProgram();
-    public void logPrgStateExec() throws InterpretorException;
-
+    void addPrgState(PrgState st);
+    PrgState getCurrentProgram();
+    void logPrgStateExec() throws InterpretorException;
 }

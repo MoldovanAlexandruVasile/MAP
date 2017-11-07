@@ -52,4 +52,9 @@ public class OpenFile implements Statement
                 return true;
         return false;
     }
+
+    @Override
+    public String toString() {
+        return "OpenFile{" + "fileName='" + fileName + '\'' + ", varName='" + varName + '\'' + '}';
+    }
 }

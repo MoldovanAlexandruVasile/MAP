@@ -5,9 +5,7 @@
  **************************************************************************************************/
 
 package View;
-import Expression.ConstExpr;
-import Expression.VarExpr;
-import File.FileData;
+import Expression.*;
 import Model.*;
 import Controller.*;
 import Repository.*;
@@ -23,10 +21,11 @@ public class Main
     {
         try
         {
+            //LAB 2
             //Example 1
             // v = 2
             // Print(v)
-            Statement s = new CompStmt(new AssignStmt("v", new ConstExpr(2)),new PrintStmt(new VarExpr("v")));
+            //Statement s = new CompStmt(new AssignStmt("v", new ConstExpr(2)),new PrintStmt(new VarExpr("v")));
 
 
             //Example 2
@@ -50,20 +49,57 @@ public class Main
             //Div by zero exception
             //Statement s = new AssignStmt("a", new ArithmeticExpr('/', new ConstExpr(2), new ConstExpr(0)));
 
+
+
+
+
+            //LAB 3
+            /*
+            openRFile(var_f,"test.in");
+            readFile(var_f,var_c);
+            print(var_c);
+            if var_c then
+                readFile(var_f,var_c);
+                print(var_c);
+            else
+                print(0);
+            closeRFile(var_f);
+            */
+
             IExecStack<Statement> execStack = new ExeStack<>();
             IDictionary<String,Integer> dict = new Dictionary<>();
             IList<Integer> l = new outputList<>();
-            FileData fd = new FileData("file", new BufferedReader(new FileReader("E:\\Programe\\IntelliJ IDEA 2017.2.5\\Projects\\Lab3\\Expressions.txt")));
             FileTable ft = new FileTable();
+            Statement s = new CompStmt(
+                    new OpenFile("var_f", "test.in"),
+                    new CompStmt(
+                            new readFile(
+                                    new VarExpr("var_f"),"var_c"),
+                            new CompStmt(
+                                    new PrintStmt(new VarExpr("var_c")),
+                                    new CompStmt(
+                                            new IfStmt(
+                                                    new VarExpr("var_c"),
+                                                    new CompStmt(
+                                                            new readFile(new VarExpr("var_f"), "var_c"),
+                                                            new PrintStmt(new VarExpr("var_c"))
+                                                    ),
+                                                    new PrintStmt(new ConstExpr(0))
+                                            ),
+                                            new closeFile(new VarExpr("var_f"))
+                                    )
+                            )
+                    )
+            );
+
 
             execStack.push(s);
             //execStack.push(s2);
 
 
-            PrgState state = new PrgState(execStack, dict, l, s, fd, ft);
-            IPrgStateRepo repo = new PrgStateRepo();
+            PrgState state = new PrgState(execStack, dict, l, s, ft);
+            IPrgStateRepo repo = new PrgStateRepo("E:\\Programe\\IntelliJ IDEA 2017.2.5\\Projects\\Lab3\\Expressions.txt");
             repo.addPrgState(state);
-
             Controller c = new Controller(repo);
             //c.executeOneStep();
             //c.executeOneStep();
