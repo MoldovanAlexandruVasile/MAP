@@ -4,29 +4,25 @@
  *                                                                                                *
  **************************************************************************************************/
 
-package Expression;
+package Model;
 
-import Exception.EvaluationException;
-import Model.IDictionary;
-
-public class VarExpr implements Expression
+public abstract class Command
 {
-    private String x;
-    public VarExpr(String str)
+    private String key,description;
+
+    public Command(String key, String description)
     {
-        x = str;
+        this.key = key;
+        this.description = description;
     }
 
-    public int Eval(IDictionary<String, Integer> d) throws EvaluationException
-    {
-        if(d.contains(x))
-            return d.get(x);
-        throw new EvaluationException("Can not be evaluated " + x + " !");
+    public abstract void execute();
+
+    public String getKey() {
+        return key;
     }
 
-    @Override
-    public String toString()
-    {
-        return "" + x;
+    public String getDescription() {
+        return description;
     }
 }

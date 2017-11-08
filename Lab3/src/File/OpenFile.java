@@ -23,11 +23,9 @@ public class OpenFile implements Statement
         varName = vn;
     }
 
-    public PrgState execute(PrgState state) throws InterpretorException
+    public PrgState execute(PrgState state)
     {
-        if(isOpen(state))
-            throw new InterpretorException("Interpretor exception !");
-        else
+        if(!isOpen(state))
             try
             {
                 BufferedReader br = new BufferedReader(new FileReader(fileName));
@@ -41,7 +39,10 @@ public class OpenFile implements Statement
                 }
                 else dict.add(varName, id);
             }
-            catch(IOException ex) {throw new InterpretorException(ex.toString());}
+            catch(IOException ex)
+            {
+                System.out.println(ex.toString());
+            }
         return state;
     }
 

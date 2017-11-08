@@ -6,5 +6,5 @@ public interface IPrgStateRepo
 {
     void addPrgState(PrgState st);
     PrgState getCurrentProgram();
-    void logPrgStateExec() throws InterpretorException;
+    void logPrgStateExec();
 }

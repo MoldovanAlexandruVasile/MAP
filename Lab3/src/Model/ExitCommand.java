@@ -4,29 +4,17 @@
  *                                                                                                *
  **************************************************************************************************/
 
-package Expression;
+package Model;
 
-import Exception.EvaluationException;
-import Model.IDictionary;
+public class ExitCommand extends Command {
 
-public class VarExpr implements Expression
-{
-    private String x;
-    public VarExpr(String str)
+    public ExitCommand(String key, String description)
     {
-        x = str;
-    }
-
-    public int Eval(IDictionary<String, Integer> d) throws EvaluationException
-    {
-        if(d.contains(x))
-            return d.get(x);
-        throw new EvaluationException("Can not be evaluated " + x + " !");
+        super(key, description);
     }
 
     @Override
-    public String toString()
-    {
-        return "" + x;
+    public void execute() {
+        System.exit(0);
     }
 }

@@ -43,6 +43,6 @@ public class IfStmt implements Statement {
 
     @Override
     public String toString() {
-        return "IF(" + exp + ")THEN(" + thenS + ")ELSE(" + elseS + ") ;";
+        return " IF(" + exp + ")THEN(" + thenS + ")ELSE(" + elseS + ") ";
     }
 }

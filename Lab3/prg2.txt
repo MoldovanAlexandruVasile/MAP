@@ -1,0 +1,32 @@
+ExeStack:
+a = 2 - 2
+ IF(a)THEN(v = 2)ELSE(v = 3) v
+Symbol table: 
+Output list: 
+ExeStack:
+ IF(a)THEN(v = 2)ELSE(v = 3) v
+Symbol table: 
+a->0
+Output list: 
+ExeStack:
+ IF(a)THEN(v = 2)ELSE(v = 3) 
+v
+Symbol table: 
+a->0
+Output list: 
+ExeStack:
+v
+v = 3
+Symbol table: 
+a->0
+Output list: 
+ExeStack:
+v = 3
+Symbol table: 
+a->0
+Output list: 
+ExeStack:
+Symbol table: 
+a->0
+v->3
+Output list: 

@@ -18,7 +18,7 @@ public class closeFile implements Statement {
         fileID = fID;
     }
 
-    public PrgState execute(PrgState prgState) throws InterpretorException {
+    public PrgState execute(PrgState prgState) {
         try {
             int exp = fileID.Eval(prgState.getSymbolT());
             if (prgState.getFileTable().contains(exp)) {

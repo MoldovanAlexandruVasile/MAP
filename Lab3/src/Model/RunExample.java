@@ -4,29 +4,30 @@
  *                                                                                                *
  **************************************************************************************************/
 
-package Expression;
+package Model;
 
-import Exception.EvaluationException;
-import Model.IDictionary;
+import Controller.*;
 
-public class VarExpr implements Expression
+public class RunExample extends Command
 {
-    private String x;
-    public VarExpr(String str)
-    {
-        x = str;
-    }
+    private Controller controller;
 
-    public int Eval(IDictionary<String, Integer> d) throws EvaluationException
+    public RunExample(String key, String description, Controller ctrl)
     {
-        if(d.contains(x))
-            return d.get(x);
-        throw new EvaluationException("Can not be evaluated " + x + " !");
+        super(key, description);
+        this.controller = ctrl;
     }
 
     @Override
-    public String toString()
+    public void execute()
     {
-        return "" + x;
+        try
+        {
+            controller.executeAll();
+        }
+        catch(RuntimeException e)
+        {
+            System.out.println("Runtime error !");
+        }
     }
 }

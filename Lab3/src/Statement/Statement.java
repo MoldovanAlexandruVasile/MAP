@@ -9,5 +9,5 @@ import Exception.*;
 
 public interface Statement
 {
-    public PrgState execute(PrgState p) throws InterpretorException;
+    public PrgState execute(PrgState p);
 }

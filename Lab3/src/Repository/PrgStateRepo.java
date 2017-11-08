@@ -24,9 +24,13 @@ public class PrgStateRepo implements IPrgStateRepo
     }
 
     private String fileName;
-    public PrgStateRepo(String fName) { fileName = fName; }
+    public PrgStateRepo(PrgState program, String fName)
+    {
+        fileName = fName;
+        myList.add(program);
+    }
 
-    public void logPrgStateExec() throws InterpretorException
+    public void logPrgStateExec()
     {
         PrgState state = getCurrentProgram();
         try (PrintWriter log = new PrintWriter(new BufferedWriter(new FileWriter(fileName, true))))
@@ -43,6 +47,9 @@ public class PrgStateRepo implements IPrgStateRepo
             for(int v : state.getList().getAll())
                 log.println(v);
         }
-        catch(IOException ex) {throw new InterpretorException(ex.toString());}
+        catch(IOException ex)
+        {
+            System.out.println(ex.getMessage());
+        }
     }
 }

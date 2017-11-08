@@ -22,6 +22,6 @@ public class outputList<T> implements IList<T>
 
     @Override
     public String toString() {
-        return "\nOutput list: \n" + l;
+        return "\nOutput list: " + l;
     }
 }

@@ -6,7 +6,6 @@
 
 package Statement;
 
-import Exception.*;
 import File.*;
 import Model.*;
 
@@ -19,7 +18,7 @@ public class PrgState
     private Statement statement;
     private FileData fd;
     private FileTable<Integer,FileData> ft;
-    public PrgState(IExecStack<Statement> s, IDictionary<String, Integer> d, IList<Integer> l, Statement st, FileTable<Integer, FileData> ftable) throws InterpretorException
+    public PrgState(IExecStack<Statement> s, IDictionary<String, Integer> d, IList<Integer> l, Statement st, FileTable<Integer, FileData> ftable)
     {
         execStack = s;
         symbolT = d;

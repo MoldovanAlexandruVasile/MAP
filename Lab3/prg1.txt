@@ -1,0 +1,34 @@
+ExeStack:
+a = 5
+ IF(a - 5)THEN(1)ELSE(2) 5 + 7 * a
+Symbol table: 
+Output list: 
+ExeStack:
+ IF(a - 5)THEN(1)ELSE(2) 5 + 7 * a
+Symbol table: 
+a->5
+Output list: 
+ExeStack:
+ IF(a - 5)THEN(1)ELSE(2) 
+5 + 7 * a
+Symbol table: 
+a->5
+Output list: 
+ExeStack:
+5 + 7 * a
+2
+Symbol table: 
+a->5
+Output list: 
+ExeStack:
+2
+Symbol table: 
+a->5
+Output list: 
+60
+ExeStack:
+Symbol table: 
+a->5
+Output list: 
+60
+2

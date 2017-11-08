@@ -22,7 +22,7 @@ public class readFile implements Statement {
     }
 
     @Override
-    public PrgState execute(PrgState prgState) throws InterpretorException
+    public PrgState execute(PrgState prgState)
     {
         String line;
         try

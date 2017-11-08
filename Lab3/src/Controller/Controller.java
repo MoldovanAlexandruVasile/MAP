@@ -2,7 +2,6 @@ package Controller;
 import Repository.*;
 import Model.*;
 import Statement.*;
-import Exception.*;
 
 public class Controller
 {
@@ -18,15 +17,9 @@ public class Controller
         if(! ex.isEmpty())
         {
             Statement instr = ex.pop();
-            try
-            {
-                instr.execute(ps);
-            }
-            catch(InterpretorException e)
-            {
-                System.out.println(e.getMessage());
-            }
+            instr.execute(ps);
             System.out.println(ps);
+
         }
         System.out.println("----------------------------------------------");
     }
@@ -36,16 +29,13 @@ public class Controller
         IExecStack<Statement> es = ps.getExecStack();
         while(! es.isEmpty())
         {
-            try
-            {
-                executeOneStep();
-                ipsr.logPrgStateExec();
-            }
-            catch(InterpretorException e)
-            {
-                System.out.println(e.getMessage());
-            }
+            executeOneStep();
+            ipsr.logPrgStateExec();
         }
         System.out.println("----------------------------------------------");
+    }
+
+    public void add(PrgState prgState){
+        ipsr.addPrgState(prgState);
     }
 }
