@@ -11,11 +11,13 @@ public class TextMenu
 
     private Map<String,Command> commands;
 
-    public TextMenu() {
+    public TextMenu() 
+    {
         commands = new HashMap<>();
     }
 
-    public void addCommand(Command c){
+    public void addCommand(Command c)
+    {
         commands.put(c.getKey(),c);
     }
 
