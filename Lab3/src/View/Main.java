@@ -12,8 +12,8 @@ import Repository.*;
 import Statement.*;
 import File.*;
 
-public class Main {
-
+public class Main 
+{
     public static void main(String arg[])
     {
         IPrgStateRepo repository1 = new PrgStateRepo(prg1(), "prg1.txt");
