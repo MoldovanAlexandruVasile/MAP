@@ -1,0 +1,53 @@
+ID:4
+ExeStack:
+OpenFile{fileName='a', varName='a.txt'}OpenFile{fileName='b', varName='b.txt'}
+OpenFile{fileName='c', varName='c.txt'}OpenFile{fileName='d', varName='d.txt'}
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+OpenFile{fileName='a', varName='a.txt'}
+OpenFile{fileName='b', varName='b.txt'}
+OpenFile{fileName='c', varName='c.txt'}OpenFile{fileName='d', varName='d.txt'}
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+OpenFile{fileName='b', varName='b.txt'}
+OpenFile{fileName='c', varName='c.txt'}OpenFile{fileName='d', varName='d.txt'}
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+OpenFile{fileName='c', varName='c.txt'}OpenFile{fileName='d', varName='d.txt'}
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+OpenFile{fileName='c', varName='c.txt'}
+OpenFile{fileName='d', varName='d.txt'}
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+OpenFile{fileName='d', varName='d.txt'}
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+Symbol Table:
+OutputList:
+Heap:
+=============================================
