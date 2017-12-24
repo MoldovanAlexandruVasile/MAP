@@ -1,0 +1,6 @@
+E:\Programe\Visual Studio\Programe\MAP_Lab7\MAP_Lab7\obj\Debug\MAP_Lab7.csprojResolveAssemblyReference.cache
+E:\Programe\Visual Studio\Programe\MAP_Lab7\MAP_Lab7\bin\Debug\MAP_Lab7.exe.config
+E:\Programe\Visual Studio\Programe\MAP_Lab7\MAP_Lab7\bin\Debug\MAP_Lab7.exe
+E:\Programe\Visual Studio\Programe\MAP_Lab7\MAP_Lab7\bin\Debug\MAP_Lab7.pdb
+E:\Programe\Visual Studio\Programe\MAP_Lab7\MAP_Lab7\obj\Debug\MAP_Lab7.exe
+E:\Programe\Visual Studio\Programe\MAP_Lab7\MAP_Lab7\obj\Debug\MAP_Lab7.pdb
