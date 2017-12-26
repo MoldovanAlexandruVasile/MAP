@@ -20,12 +20,10 @@ namespace MAP_Lab7.ControllerFile
             IExeStack<Statement> ex = ps.ExeStack;
             if (!ex.IsEmpty())
             {
-                Statement stmt = ex.Pop();
+                Statement stmt = ex.PopS();
                 stmt.Execute(ps);
-                Console.WriteLine(ps);
-
             }
-            Console.WriteLine("----------------------------------------------");
+            Console.WriteLine("----------------------------------------------\n\n");
         }
 
         public void executeAll()
@@ -37,7 +35,7 @@ namespace MAP_Lab7.ControllerFile
                 executeOneStep();
                 repo.logPrgStateExec();
             }
-            Console.WriteLine("----------------------------------------------");
+            Console.WriteLine("----------------------------------------------\n\n");
         }
     }
 }

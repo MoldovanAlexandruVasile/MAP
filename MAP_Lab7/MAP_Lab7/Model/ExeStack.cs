@@ -1,5 +1,4 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 
 namespace MAP_Lab7.Model
@@ -8,12 +7,12 @@ namespace MAP_Lab7.Model
     {
         private Stack<T> stack = new Stack<T>();
 
-        public void Push(T x)
+        public void PushS(T x)
         {
             stack.Push(x);
         }
 
-        public T Pop()
+        public T PopS()
         {
             return stack.Pop();
         }

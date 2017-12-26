@@ -1,0 +1,73 @@
+
+ExeStack: 
+a= 2 -  2
+
+IF (a) THEN (v= 2) ELSE (v= 3)
+v
+
+Dictionary: 
+
+OutputList: 
+
+FileTable: 
+------------------------------------------------
+
+ExeStack: 
+IF (a) THEN (v= 2) ELSE (v= 3)
+v
+
+Dictionary: 
+a --> 0
+
+OutputList: 
+
+FileTable: 
+------------------------------------------------
+
+ExeStack: 
+IF (a) THEN (v= 2) ELSE (v= 3)
+v
+
+Dictionary: 
+a --> 0
+
+OutputList: 
+
+FileTable: 
+------------------------------------------------
+
+ExeStack: 
+v= 3
+v
+
+Dictionary: 
+a --> 0
+
+OutputList: 
+
+FileTable: 
+------------------------------------------------
+
+ExeStack: 
+v
+
+Dictionary: 
+a --> 0
+v --> 3
+
+OutputList: 
+
+FileTable: 
+------------------------------------------------
+
+ExeStack: 
+
+Dictionary: 
+a --> 0
+v --> 3
+
+OutputList: 
+3
+
+FileTable: 
+------------------------------------------------

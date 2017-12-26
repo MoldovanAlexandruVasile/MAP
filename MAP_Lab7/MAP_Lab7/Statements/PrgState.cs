@@ -1,5 +1,6 @@
 ﻿using MAP_Lab7.Files;
 using MAP_Lab7.Model;
+using System.Text;
 
 namespace MAP_Lab7.Statements
 {
@@ -48,6 +49,17 @@ namespace MAP_Lab7.Statements
         {
             get { return outputList; }
             set { outputList = value; }
+        }
+
+        public override string ToString()
+        {
+            StringBuilder buff = new StringBuilder();
+            buff.Append(Dict);
+            buff.Append(ExeStack);
+            buff.Append(OutputList);
+            buff.Append(Stmt);
+            buff.Append("\n");
+            return buff.ToString();
         }
 
     }

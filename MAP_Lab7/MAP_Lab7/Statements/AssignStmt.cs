@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using MAP_Lab7.Exceptions;
 using MAP_Lab7.Expressions;
 
@@ -44,7 +42,7 @@ namespace MAP_Lab7.Statements
 
         public override string ToString()
         {
-            return "Assign(" + var + "=" + expr + ")";
+            return var + "=" + expr;
         }
     }
 }

@@ -13,14 +13,14 @@ namespace MAP_Lab7
     {
         static void Main(string[] args)
         {
-            IPrgStateRepo repository1 = new ProgStateRepo(prg1(), "prg1.txt");
+            IPrgStateRepo repository1 = new ProgStateRepo(prg1(), "E:\\Programe\\Visual Studio\\Programe\\MAP_Lab7\\prg1.txt");
             Controller controller1 = new Controller(repository1);
-            IPrgStateRepo repository2 = new ProgStateRepo(prg2(), "prg2.txt");
+            IPrgStateRepo repository2 = new ProgStateRepo(prg2(), "E:\\Programe\\Visual Studio\\Programe\\MAP_Lab7\\prg2.txt");
             Controller controller2 = new Controller(repository2);
             TextMenu menu = new TextMenu();
             menu.AddCommand(new ExitCommand("0", "Exit"));
-            menu.AddCommand(new RunCommand("1", "Program 1", controller1));
-            menu.AddCommand(new RunCommand("2", "Program 2", controller2));
+            menu.AddCommand(new RunCommand("1", ". " + prg1().Stmt.ToString(), controller1));
+            menu.AddCommand(new RunCommand("2", ". " + prg2().Stmt.ToString(), controller2));
             menu.Show();
         }
 
@@ -62,7 +62,7 @@ namespace MAP_Lab7
             IDictionaryy<string, int> dict = new Dictionaryy<string, int>();
             IListt<int> l = new outputList<int>();
             FileTable<int, FileData> ft = new FileTable<int, FileData>();
-            stack.Push(ex1);
+            stack.PushS(ex1);
             PrgState state = new PrgState(dict, stack, l, ex1, ft);
             return state;
         }
@@ -95,7 +95,7 @@ namespace MAP_Lab7
             IDictionaryy<string, int> dict = new Dictionaryy<string, int>();
             IListt<int> l = new outputList<int>();
             FileTable<int, FileData> ft = new FileTable<int, FileData>();
-            stack.Push(ex2);
+            stack.PushS(ex2);
             PrgState state = new PrgState(dict, stack, l, ex2, ft);
             return state;
         }

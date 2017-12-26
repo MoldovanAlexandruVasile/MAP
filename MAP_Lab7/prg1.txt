@@ -1,0 +1,85 @@
+
+ExeStack: 
+a= 5
+IF (a -  5
+) THEN ( 1) ELSE ( 2)
+ 5 +  7
+ * a
+
+
+Dictionary: 
+
+OutputList: 
+
+FileTable: 
+------------------------------------------------
+
+ExeStack: 
+IF (a -  5
+) THEN ( 1) ELSE ( 2)
+ 5 +  7
+ * a
+
+
+Dictionary: 
+a --> 5
+
+OutputList: 
+
+FileTable: 
+------------------------------------------------
+
+ExeStack: 
+IF (a -  5
+) THEN ( 1) ELSE ( 2)
+ 5 +  7
+ * a
+
+
+Dictionary: 
+a --> 5
+
+OutputList: 
+
+FileTable: 
+------------------------------------------------
+
+ExeStack: 
+ 2
+ 5 +  7
+ * a
+
+
+Dictionary: 
+a --> 5
+
+OutputList: 
+
+FileTable: 
+------------------------------------------------
+
+ExeStack: 
+ 5 +  7
+ * a
+
+
+Dictionary: 
+a --> 5
+
+OutputList: 
+2
+
+FileTable: 
+------------------------------------------------
+
+ExeStack: 
+
+Dictionary: 
+a --> 5
+
+OutputList: 
+2
+60
+
+FileTable: 
+------------------------------------------------

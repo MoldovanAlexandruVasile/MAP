@@ -23,9 +23,9 @@ namespace MAP_Lab7.Model
             try
             {
                 if (expr.Eval(state.Dict) != 0)
-                    state.ExeStack.Push(then);
+                    state.ExeStack.PushS(then);
                 else
-                    state.ExeStack.Push(els);
+                    state.ExeStack.PushS(els);
 
                 return state;
             }

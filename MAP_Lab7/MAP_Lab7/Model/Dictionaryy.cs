@@ -1,30 +1,30 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace MAP_Lab7.Model
 {
     public class Dictionaryy<K,V> : IDictionaryy<K,V>
     {
-        private Dictionaryy<K, V> dict = new Dictionaryy<K, V>();
+        private Dictionary<K, V> dict = new Dictionary<K, V>();
 
         public void Add(K key, V value)
         {
-            dict.Add(key, value);
+            dict[key] = value;
         }
 
         public void Update(K key, V value)
         {
-            dict.Add(key, value);
+            dict[key] = value;
         }
 
         public V Get(K key)
         {
-            return dict.Get(key);
+            return dict[key];
         }
 
         public bool Contains(K key)
         {
-            return dict.Contains(key);
+            return dict.ContainsKey(key);
         }
 
         public IEnumerator GetEnumerator()

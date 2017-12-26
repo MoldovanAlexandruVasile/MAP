@@ -58,14 +58,13 @@
     <Compile Include="Files\CloseFile.cs" />
     <Compile Include="Files\FileData.cs" />
     <Compile Include="Files\FileTable.cs" />
-    <Compile Include="Files\IFileTable.cs" />
     <Compile Include="Files\OpenFile.cs" />
     <Compile Include="Files\ReadFile.cs" />
     <Compile Include="Model\Dictionaryy.cs" />
     <Compile Include="Model\ExeStack.cs" />
     <Compile Include="Model\IDictionaryy.cs" />
     <Compile Include="Model\IExeStack.cs" />
-    <Compile Include="Model\IfStmt.cs" />
+    <Compile Include="Statements\IfStmt.cs" />
     <Compile Include="Model\IListt.cs" />
     <Compile Include="Model\IStack.cs" />
     <Compile Include="Model\outputList.cs" />

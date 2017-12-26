@@ -17,7 +17,7 @@ namespace MAP_Lab7.Statements
             try
             {
                 int r = expr.Eval(p.Dict);
-                p.OutputList.Add(r);
+                p.OutputList.AddList(r);
             }
             catch (EvaluationException e)
             {

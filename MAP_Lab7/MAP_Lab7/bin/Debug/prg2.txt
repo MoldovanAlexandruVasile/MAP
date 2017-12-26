@@ -1,0 +1,155 @@
+
+ExeStack: 
+IF (a) THEN (Assign(v= 2)) ELSE (Assign(v= 3))
+v
+Assign(a= 2 -  2
+)
+
+Dictionary: 
+
+OutputList: 
+
+FileTable: 
+
+
+
+
+
+ExeStack: 
+v
+IF (a) THEN (Assign(v= 2)) ELSE (Assign(v= 3))
+Assign(a= 2 -  2
+)
+
+Dictionary: 
+
+OutputList: 
+
+FileTable: 
+
+
+
+
+
+ExeStack: 
+IF (a) THEN (Assign(v= 2)) ELSE (Assign(v= 3))
+v
+Assign(a= 2 -  2
+)
+
+Dictionary: 
+
+OutputList: 
+
+FileTable: 
+
+
+
+
+
+ExeStack: 
+v
+IF (a) THEN (Assign(v= 2)) ELSE (Assign(v= 3))
+Assign(a= 2 -  2
+)
+
+Dictionary: 
+
+OutputList: 
+
+FileTable: 
+
+
+
+
+
+ExeStack: 
+Assign(a= 2 -  2
+)
+IF (a) THEN (Assign(v= 2)) ELSE (Assign(v= 3))
+v
+
+Dictionary: 
+
+OutputList: 
+
+FileTable: 
+
+
+
+
+
+ExeStack: 
+IF (a) THEN (Assign(v= 2)) ELSE (Assign(v= 3))
+v
+
+Dictionary: 
+a --> 0
+
+OutputList: 
+
+FileTable: 
+
+
+
+
+
+ExeStack: 
+IF (a) THEN (Assign(v= 2)) ELSE (Assign(v= 3))
+v
+
+Dictionary: 
+a --> 0
+
+OutputList: 
+
+FileTable: 
+
+
+
+
+
+ExeStack: 
+Assign(v= 3)
+v
+
+Dictionary: 
+a --> 0
+
+OutputList: 
+
+FileTable: 
+
+
+
+
+
+ExeStack: 
+v
+
+Dictionary: 
+a --> 0
+v --> 3
+
+OutputList: 
+
+FileTable: 
+
+
+
+
+
+ExeStack: 
+
+Dictionary: 
+a --> 0
+v --> 3
+
+OutputList: 
+3
+
+FileTable: 
+
+
+
+

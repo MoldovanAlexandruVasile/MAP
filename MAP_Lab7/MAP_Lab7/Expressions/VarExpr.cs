@@ -18,7 +18,7 @@ namespace MAP_Lab7.Expressions
 
         public override string ToString()
         {
-            return var;
+            return "" + var;
         }
     }
 }

@@ -56,7 +56,7 @@ namespace MAP_Lab7.Expressions
 
         public override string ToString()
         {
-            return "" + left + ' ' + op + ' ' + right + '\n';
+            return "" + left + ' ' + op + ' ' + right;
         }
     }
 }

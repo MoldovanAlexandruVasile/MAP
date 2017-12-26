@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MAP_Lab7.Statements
+﻿namespace MAP_Lab7.Statements
 {
     public class CompStmt:Statement
     {
@@ -17,14 +11,14 @@ namespace MAP_Lab7.Statements
 
         public PrgState Execute(PrgState state)
         {
-            state.ExeStack.Push(first);
-            state.ExeStack.Push(second);
+            state.ExeStack.PushS(second);
+            state.ExeStack.PushS(first);
             return state;
         }
 
         public override string ToString()
         {
-            return "" + first + "\n" + second;
+            return "" + first + second;
         }
     }
 }

@@ -1,0 +1,15 @@
+
+ExeStack: 
+
+Dictionary: 
+a --> 5
+
+OutputList: 
+2
+60
+
+FileTable: 
+
+
+
+

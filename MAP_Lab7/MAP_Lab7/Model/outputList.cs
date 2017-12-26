@@ -1,12 +1,13 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace MAP_Lab7.Model
 {
     public class outputList<T> : IListt<T>
     {
-        private IListt<T> list = new outputList<T>();
+        private List<T> list = new List<T>();
 
-        public void Add(T x)
+        public void AddList(T x)
         {
             list.Add(x);
         }
