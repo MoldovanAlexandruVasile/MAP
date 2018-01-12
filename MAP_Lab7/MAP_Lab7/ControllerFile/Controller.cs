@@ -1,6 +1,7 @@
 ﻿using MAP_Lab7.Statements;
 using MAP_Lab7.Repository;
 using MAP_Lab7.Model;
+using MAP_Lab7.Exceptions;
 using System;
 
 namespace MAP_Lab7.ControllerFile
@@ -32,8 +33,15 @@ namespace MAP_Lab7.ControllerFile
             IExeStack<Statement> es = ps.ExeStack;
             while (!es.IsEmpty())
             {
-                executeOneStep();
-                repo.logPrgStateExec();
+                try
+                {
+                    executeOneStep();
+                    repo.logPrgStateExec();
+                }
+                catch(FileException e)
+                {
+                    Console.WriteLine(e.Message);
+                } 
             }
             Console.WriteLine("----------------------------------------------\n\n");
         }

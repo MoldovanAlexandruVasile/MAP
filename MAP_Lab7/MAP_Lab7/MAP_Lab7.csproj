@@ -47,6 +47,7 @@
     <Compile Include="Commands\ExitCommand.cs" />
     <Compile Include="Commands\RunCommand.cs" />
     <Compile Include="ControllerFile\Controller.cs" />
+    <Compile Include="Exceptions\CommandException.cs" />
     <Compile Include="Exceptions\DivByZeroException.cs" />
     <Compile Include="Exceptions\EvaluationException.cs" />
     <Compile Include="Exceptions\FileException.cs" />
@@ -66,7 +67,6 @@
     <Compile Include="Model\IExeStack.cs" />
     <Compile Include="Statements\IfStmt.cs" />
     <Compile Include="Model\IListt.cs" />
-    <Compile Include="Model\IStack.cs" />
     <Compile Include="Model\outputList.cs" />
     <Compile Include="Repository\IPrgStateRepo.cs" />
     <Compile Include="Repository\ProgStateRepo.cs" />

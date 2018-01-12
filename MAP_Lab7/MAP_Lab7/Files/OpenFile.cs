@@ -36,7 +36,7 @@ namespace MAP_Lab7.Files
 
         public override string ToString()
         {
-            return "Open(" + fileName + ")";
+            return "Open(" + fileName + ")\n";
 
         }
     }

@@ -36,7 +36,7 @@ namespace MAP_Lab7.Statements
 
         public override string ToString()
         {
-            return "" + expr;
+            return " Print(" + expr + ")";
         }
     }
 }
