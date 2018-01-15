@@ -76,6 +76,11 @@ public class PrgStateRepo implements IPrgStateRepo
             for (Map.Entry<Integer,Integer> entry : prgState.getHeap().getContent().entrySet()){
                 log.print(entry.getKey()+ "-->" + entry.getValue() + "\n");
             }
+
+            log.print("FileTable:\n");
+            for (Integer entry : prgState.getFileTable().getAll()){
+                log.print(entry + "-->" + prgState.getFileTable().get(entry).getFileName() + "\n");
+            }
             log.print("=============================================\n");
             log.close();
         }

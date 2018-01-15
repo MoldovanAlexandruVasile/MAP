@@ -10,9 +10,7 @@ import java.util.HashMap;
 
 public class FileTable<K, V> implements IFileTable<K, V>
 {
-    private HashMap<K,V> dict;
-
-    public void FileTable() { dict = new HashMap<>(); }
+    private HashMap<K,V> dict = new HashMap<>();
 
     public void add(K key, V value)
     {

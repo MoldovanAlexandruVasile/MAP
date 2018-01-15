@@ -5,18 +5,20 @@
  **************************************************************************************************/
 
 package Model.File;
+import Model.Exception.FileException;
 import Model.Statement.*;
 import Model.*;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.File;
 
 public class OpenFile implements Statement
 {
     private String fileName;
     private String varName;
-    public OpenFile(String fl, String vn)
+    public OpenFile(String vn, String fl)
     {
         fileName = fl;
         varName = vn;
@@ -27,6 +29,9 @@ public class OpenFile implements Statement
         if(!isOpen(state))
             try
             {
+                if(!new File(fileName).exists())
+                    throw new FileException("The file does not exist !");
+
                 BufferedReader br = new BufferedReader(new FileReader(fileName));
                 FileData fd = new FileData(fileName, br);
                 int id = IDGenerator.generate_ID();
@@ -38,9 +43,9 @@ public class OpenFile implements Statement
                 }
                 else dict.add(varName, id);
             }
-            catch(IOException | NullPointerException ex)
+            catch(IOException | FileException ex)
             {
-                System.out.println(ex.toString());
+                System.out.println(ex.getMessage());
             }
         return state;
     }

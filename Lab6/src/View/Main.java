@@ -46,7 +46,7 @@ public class Main {
         IDictionary<String, Integer> dict4 = new Dictionary<>();
         IList<Integer> l4 = new outputList<>();
         stack4.push(prg4());
-        IPrgStateRepo repository4 = new PrgStateRepo(new PrgState(stack4, dict4, l4, new FileTable<>(), new Heap<>(), 4), "prg4.txt");
+        IPrgStateRepo repository4 = new PrgStateRepo(new PrgState(stack4, dict4, l4, new FileTable<>(), new Heap<>(), 4), "E:\\IT\\GitHub\\MAP\\Lab6\\prg4.txt");
         Controller controller4 = new Controller(repository4);
 
         IExecStack<Statement> stack5 = new ExeStack<>();
