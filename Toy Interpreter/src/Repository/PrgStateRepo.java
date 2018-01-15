@@ -34,6 +34,11 @@ public class PrgStateRepo implements IPrgStateRepo
 
     public PrgStateRepo() { }
 
+    public PrgStateRepo(String fname)
+    {
+        fileName = fname;
+    }
+
     public PrgStateRepo(PrgState program, String fName)
     {
         fileName = fName;

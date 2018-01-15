@@ -8,6 +8,8 @@ package Controller;
 
 //import Model.Heap.IHeap;
 //import java.util.Map;
+import Model.IExecStack;
+import Model.Statement.Statement;
 import Repository.*;
 import Model.Statement.PrgState;
 import java.util.List;
@@ -88,7 +90,8 @@ public class Controller
     }
 
 
-    public void oneStepGUI()
+
+    public int oneStepGUI()
     {
 
         List<PrgState> prgList = removeCompletedPrg(repo.getPrgList());
@@ -97,12 +100,14 @@ public class Controller
         {
             oneStepForAllPrg(prgList);
             removeCompletedPrg(repo.getPrgList());
+            return repo.getPrgList().size();
         }
         else
         {
             removeCompletedPrg(repo.getPrgList());
             executor.shutdownNow();
             repo.setPrgList(prgList);
+            return 0;
         }
     }
 }

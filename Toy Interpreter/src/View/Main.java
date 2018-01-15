@@ -20,7 +20,7 @@ public class Main extends Application
     public void start(Stage primaryStage) throws Exception
     {
         try {
-            StackPane root = FXMLLoader.load(getClass().getResource("JavaFX.fxml"));
+            StackPane root = FXMLLoader.load(getClass().getResource("../Controller/JavaFX.fxml"));
             Scene scene = new Scene(root, 994.0, 641.0, Color.DARKBLUE);
             primaryStage.setScene(scene);
             primaryStage.setTitle("Toy interpretor.");
