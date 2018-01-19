@@ -1,0 +1,7 @@
+ID:6
+ExeStack:
+Symbol Table:
+x-->11
+OutputList:
+Heap:
+=============================================

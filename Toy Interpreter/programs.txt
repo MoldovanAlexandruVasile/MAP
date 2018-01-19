@@ -1,3 +1,468 @@
+ID:1
+ExeStack:
+a = 5
+IF(a  - 5)THEN(1)ELSE(2) 5 + 7 * a 
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:1
+ExeStack:
+IF(a  - 5)THEN(1)ELSE(2) 5 + 7 * a 
+Symbol Table:
+a-->5
+OutputList:
+Heap:
+=============================================
+ID:1
+ExeStack:
+IF(a  - 5)THEN(1)ELSE(2) 
+5 + 7 * a 
+Symbol Table:
+a-->5
+OutputList:
+Heap:
+=============================================
+ID:1
+ExeStack:
+2
+5 + 7 * a 
+Symbol Table:
+a-->5
+OutputList:
+Heap:
+=============================================
+ID:1
+ExeStack:
+5 + 7 * a 
+Symbol Table:
+a-->5
+OutputList:
+2
+Heap:
+=============================================
+ID:1
+ExeStack:
+Symbol Table:
+a-->5
+OutputList:
+2
+60
+Heap:
+=============================================
+ID:2
+ExeStack:
+a = 2 - 2
+IF(a )THEN(v = 2)ELSE(v = 3) v 
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:2
+ExeStack:
+IF(a )THEN(v = 2)ELSE(v = 3) v 
+Symbol Table:
+a-->0
+OutputList:
+Heap:
+=============================================
+ID:2
+ExeStack:
+IF(a )THEN(v = 2)ELSE(v = 3) 
+v 
+Symbol Table:
+a-->0
+OutputList:
+Heap:
+=============================================
+ID:2
+ExeStack:
+v = 3
+v 
+Symbol Table:
+a-->0
+OutputList:
+Heap:
+=============================================
+ID:2
+ExeStack:
+v 
+Symbol Table:
+a-->0
+v-->3
+OutputList:
+Heap:
+=============================================
+ID:2
+ExeStack:
+Symbol Table:
+a-->0
+v-->3
+OutputList:
+3
+Heap:
+=============================================
+ID:3
+ExeStack:
+v = 10newH(v,20);newH(a,22);wH(a, 30);
+a rH(a);a = 0
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:3
+ExeStack:
+v = 10newH(v,20);
+newH(a,22);wH(a, 30);
+a rH(a);a = 0
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:3
+ExeStack:
+v = 10
+newH(v,20);
+newH(a,22);wH(a, 30);
+a rH(a);a = 0
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:3
+ExeStack:
+newH(v,20);
+newH(a,22);wH(a, 30);
+a rH(a);a = 0
+Symbol Table:
+v-->10
+OutputList:
+Heap:
+=============================================
+ID:3
+ExeStack:
+newH(a,22);wH(a, 30);
+a rH(a);a = 0
+Symbol Table:
+v-->1
+OutputList:
+Heap:
+1-->20
+=============================================
+ID:3
+ExeStack:
+newH(a,22);
+wH(a, 30);
+a rH(a);a = 0
+Symbol Table:
+v-->1
+OutputList:
+Heap:
+1-->20
+=============================================
+ID:3
+ExeStack:
+wH(a, 30);
+a rH(a);a = 0
+Symbol Table:
+a-->2
+v-->1
+OutputList:
+Heap:
+1-->20
+2-->22
+=============================================
+ID:3
+ExeStack:
+a rH(a);a = 0
+Symbol Table:
+a-->2
+v-->1
+OutputList:
+Heap:
+1-->20
+2-->30
+=============================================
+ID:3
+ExeStack:
+a rH(a);
+a = 0
+Symbol Table:
+a-->2
+v-->1
+OutputList:
+Heap:
+1-->20
+2-->30
+=============================================
+ID:3
+ExeStack:
+a 
+rH(a);
+a = 0
+Symbol Table:
+a-->2
+v-->1
+OutputList:
+Heap:
+1-->20
+2-->30
+=============================================
+ID:3
+ExeStack:
+rH(a);
+a = 0
+Symbol Table:
+a-->2
+v-->1
+OutputList:
+2
+Heap:
+1-->20
+2-->30
+=============================================
+ID:3
+ExeStack:
+a = 0
+Symbol Table:
+a-->2
+v-->1
+OutputList:
+2
+30
+Heap:
+1-->20
+2-->30
+=============================================
+ID:3
+ExeStack:
+Symbol Table:
+a-->0
+v-->1
+OutputList:
+2
+30
+Heap:
+1-->20
+2-->30
+=============================================
+ID:4
+ExeStack:
+OpenFile{fileName='a.txt', varName='a'}OpenFile{fileName='b.txt', varName='b'}
+OpenFile{fileName='c.txt', varName='c'}OpenFile{fileName='d.txt', varName='d'}
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+OpenFile{fileName='a.txt', varName='a'}
+OpenFile{fileName='b.txt', varName='b'}
+OpenFile{fileName='c.txt', varName='c'}OpenFile{fileName='d.txt', varName='d'}
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+OpenFile{fileName='b.txt', varName='b'}
+OpenFile{fileName='c.txt', varName='c'}OpenFile{fileName='d.txt', varName='d'}
+Symbol Table:
+a-->0
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+OpenFile{fileName='b.txt', varName='b'}
+OpenFile{fileName='c.txt', varName='c'}OpenFile{fileName='d.txt', varName='d'}
+Symbol Table:
+a-->0
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+OpenFile{fileName='c.txt', varName='c'}
+OpenFile{fileName='d.txt', varName='d'}
+Symbol Table:
+a-->0
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+OpenFile{fileName='c.txt', varName='c'}
+OpenFile{fileName='d.txt', varName='d'}
+Symbol Table:
+a-->0
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+OpenFile{fileName='c.txt', varName='c'}
+OpenFile{fileName='d.txt', varName='d'}
+Symbol Table:
+a-->0
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+Symbol Table:
+a-->0
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+Symbol Table:
+a-->0
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+Symbol Table:
+a-->0
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+Symbol Table:
+a-->0
+OutputList:
+Heap:
+=============================================
+ID:4
+ExeStack:
+Symbol Table:
+a-->0
+OutputList:
+Heap:
+=============================================
+ID:5
+ExeStack:
+v = 6While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:5
+ExeStack:
+v = 6
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:5
+ExeStack:
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+v-->6
+OutputList:
+Heap:
+=============================================
+ID:5
+ExeStack:
+v 
+v = v  - 1
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+v-->6
+OutputList:
+Heap:
+=============================================
+ID:5
+ExeStack:
+v = v  - 1
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+v-->6
+OutputList:
+6
+Heap:
+=============================================
+ID:5
+ExeStack:
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+v-->5
+OutputList:
+6
+Heap:
+=============================================
+ID:5
+ExeStack:
+v 
+v = v  - 1
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+v-->5
+OutputList:
+6
+Heap:
+=============================================
+ID:5
+ExeStack:
+v = v  - 1
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+v-->5
+OutputList:
+6
+5
+Heap:
+=============================================
+ID:5
+ExeStack:
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+v-->4
+OutputList:
+6
+5
+Heap:
+=============================================
+ID:5
+ExeStack:
+v 
+Symbol Table:
+v-->4
+OutputList:
+6
+5
+Heap:
+=============================================
+ID:5
+ExeStack:
+Symbol Table:
+v-->4
+OutputList:
+6
+5
+4
+Heap:
+=============================================
+ID:6
+ExeStack:
+Symbol Table:
+x-->11
+OutputList:
+Heap:
+=============================================
 ID:7
 ExeStack:
 v = 10newH(a,22);ForkStmt(wH(a, 30);v = 32v rH(a);)

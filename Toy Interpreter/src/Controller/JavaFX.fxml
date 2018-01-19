@@ -12,15 +12,24 @@
   ~                                                                                               ~
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<StackPane id="StackPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerGUI">
+<StackPane id="StackPane" style="-fx-background-color: lightblue; -fx-border-color: darkblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerGUI">
    <children>
       <Group>
          <children>
             <ListView fx:id="PrgStateIdentifierList" layoutX="397.0" layoutY="331.0" prefHeight="200.0" prefWidth="152.0" />
             <Text layoutX="801.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File table" textAlignment="CENTER" wrappingWidth="152.0" />
-             <Label fx:id="NoOfThreadsLabel" layoutX="397.0" layoutY="566.0" prefHeight="21.0" prefWidth="159.0" text="Number of threads: " />
-            <Button fx:id="OneStepButton" layoutX="835.0" layoutY="566.0" mnemonicParsing="false" text="One  step" />
-             <Button fx:id="LoadButton" layoutX="728.0" layoutY="566.0" mnemonicParsing="false" text="Load" />
+             <Label fx:id="NoOfThreadsLabel" contentDisplay="TOP" layoutX="381.0" layoutY="559.0" prefHeight="38.0" prefWidth="270.0" text="Number of threads: ">
+                 <font>
+                     <Font size="26.0" />
+                 </font></Label>
+             <Button fx:id="OneStepButton" layoutX="823.0" layoutY="556.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="108.0" text="One  step">
+                 <font>
+                     <Font size="19.0" />
+                 </font></Button>
+             <Button fx:id="LoadButton" layoutX="702.0" layoutY="556.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="81.0" text="Load">
+                 <font>
+                     <Font size="19.0" />
+                 </font></Button>
             <Text layoutX="602.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Symbol table" textAlignment="CENTER" wrappingWidth="152.0" />
             <Text layoutX="801.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output list" textAlignment="CENTER" wrappingWidth="152.0" />
             <Text fx:id="ExeStackListText" layoutX="602.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exe stack" textAlignment="CENTER" wrappingWidth="152.0" />

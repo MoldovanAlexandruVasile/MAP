@@ -112,12 +112,14 @@ public class ControllerGUI implements Initializable
         items.add(prg6().getStatement().toString());
         items.add(prg7().getStatement().toString());
         view.setItems(items);
+
         Variable.setCellValueFactory(new PropertyValueFactory<>("varName"));
         ValueS.setCellValueFactory(new PropertyValueFactory<>("value"));
         Address.setCellValueFactory(new PropertyValueFactory<>("address"));
         ValueH.setCellValueFactory(new PropertyValueFactory<>("value"));
         Identifier.setCellValueFactory(new PropertyValueFactory<>("key"));
         fileName.setCellValueFactory(new PropertyValueFactory<>("name"));
+
         NoOfThreadsLabel.setText("Number of threads: " + String.valueOf(0));
 
         LoadButton.setOnAction(new EventHandler<ActionEvent>()
@@ -164,7 +166,7 @@ public class ControllerGUI implements Initializable
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Error !");
         alert.setHeaderText(null);
-        alert.setContentText("Empty ExeStack !");
+        alert.setContentText("Nothing to execute !");
         alert.show();
     }
 
@@ -191,6 +193,7 @@ public class ControllerGUI implements Initializable
             repo.addPrgState(p6);
         else if (p7.getStatement().toString().equals(str))
             repo.addPrgState(p7);
+        setPrgStateIdentifiers();
     }
 
     private void setPrgStateIdentifiers()
