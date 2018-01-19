@@ -1,0 +1,113 @@
+ID:5
+ExeStack:
+v = 6While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:5
+ExeStack:
+v = 6
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+OutputList:
+Heap:
+=============================================
+ID:5
+ExeStack:
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+v-->6
+OutputList:
+Heap:
+=============================================
+ID:5
+ExeStack:
+v 
+v = v  - 1
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+v-->6
+OutputList:
+Heap:
+=============================================
+ID:5
+ExeStack:
+v = v  - 1
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+v-->6
+OutputList:
+6
+Heap:
+=============================================
+ID:5
+ExeStack:
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+v-->5
+OutputList:
+6
+Heap:
+=============================================
+ID:5
+ExeStack:
+v 
+v = v  - 1
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+v-->5
+OutputList:
+6
+Heap:
+=============================================
+ID:5
+ExeStack:
+v = v  - 1
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+v-->5
+OutputList:
+6
+5
+Heap:
+=============================================
+ID:5
+ExeStack:
+While(v  != 4){v v = v  - 1}
+v 
+Symbol Table:
+v-->4
+OutputList:
+6
+5
+Heap:
+=============================================
+ID:5
+ExeStack:
+v 
+Symbol Table:
+v-->4
+OutputList:
+6
+5
+Heap:
+=============================================
+ID:5
+ExeStack:
+Symbol Table:
+v-->4
+OutputList:
+6
+5
+4
+Heap:
+=============================================
