@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~       Copyright(c):                                                                           ~
+  ~                         Program made by @Moldovan Alexandru-Vasile.                           ~
+  ~                                                                                               ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<StackPane id="StackPane" prefHeight="604.0" prefWidth="1336.0" style="-fx-background-color: lightblue; -fx-border-color: darkblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerGUI">
+   <children>
+      <Group>
+         <children>
+            <ListView fx:id="PrgStateIdentifierList" layoutX="-247.0" layoutY="330.0" prefHeight="200.0" prefWidth="152.0" />
+            <Text layoutX="157.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File table" textAlignment="CENTER" wrappingWidth="152.0" />
+             <Label fx:id="NoOfThreadsLabel" contentDisplay="TOP" layoutX="9.0" layoutY="549.0" prefHeight="38.0" prefWidth="270.0" text="Number of threads: ">
+                 <font>
+                     <Font size="26.0" />
+                 </font>
+            </Label>
+             <Button fx:id="OneStepButton" layoutX="451.0" layoutY="546.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="108.0" text="One  step">
+                 <font>
+                     <Font size="19.0" />
+                 </font>
+            </Button>
+             <Button fx:id="LoadButton" layoutX="330.0" layoutY="546.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="81.0" text="Load">
+                 <font>
+                     <Font size="19.0" />
+                 </font>
+            </Button>
+            <Text layoutX="-42.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Symbol table" textAlignment="CENTER" wrappingWidth="152.0" />
+            <Text layoutX="157.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output list" textAlignment="CENTER" wrappingWidth="152.0" />
+            <Text fx:id="ExeStackListText" layoutX="-42.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exe stack" textAlignment="CENTER" wrappingWidth="152.0" />
+            <Text layoutX="-247.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heap" textAlignment="CENTER" wrappingWidth="152.0" />
+            <ListView fx:id="view" layoutX="-606.0" layoutY="41.0" prefHeight="549.0" prefWidth="342.0" />
+            <Text layoutX="-606.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of executable programs" textAlignment="CENTER" wrappingWidth="342.0" />
+            <TableView fx:id="HeapTable" layoutX="-247.0" layoutY="46.0" prefHeight="200.0" prefWidth="152.0">
+              <columns>
+                <TableColumn fx:id="Address" prefWidth="75.0" text="Address" />
+                <TableColumn fx:id="ValueH" prefWidth="75.0" text="Value" />
+              </columns>
+            </TableView>
+            <TableView fx:id="FileTableTable" layoutX="157.0" layoutY="46.0" prefHeight="200.0" prefWidth="152.0">
+              <columns>
+                <TableColumn fx:id="Identifier" prefWidth="75.0" text="Identifier" />
+                <TableColumn fx:id="fileName" prefWidth="75.0" text="File name" />
+              </columns>
+            </TableView>
+            <ListView fx:id="ExeStackList" layoutX="-42.0" layoutY="330.0" prefHeight="200.0" prefWidth="152.0" />
+            <Text layoutX="-247.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PrgState Identifier" textAlignment="CENTER" wrappingWidth="152.0" />
+            <ListView fx:id="outputListList" layoutX="157.0" layoutY="330.0" prefHeight="200.0" prefWidth="152.0" />
+            <TableView fx:id="SymbolTableTable" layoutX="-42.0" layoutY="46.0" prefHeight="200.0" prefWidth="152.0">
+              <columns>
+                <TableColumn fx:id="Variable" prefWidth="75.0" text="Variable" />
+                <TableColumn fx:id="ValueS" prefWidth="75.0" text="Value" />
+              </columns>
+            </TableView>
+            <TableView fx:id="LockTableTable" layoutX="371.0" layoutY="46.0" prefHeight="200.0" prefWidth="152.0">
+               <columns>
+                  <TableColumn fx:id="LLIdentifier" prefWidth="75.0" text="Identifier" />
+                  <TableColumn fx:id="LLValue" prefWidth="75.0" text="Value" />
+               </columns>
+            </TableView>
+            <Text layoutX="371.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lock table" textAlignment="CENTER" wrappingWidth="152.0" />
+            <TableView fx:id="CyclicBarrierTable" layoutX="347.0" layoutY="330.0" prefHeight="200.0" prefWidth="245.0">
+              <columns>
+                <TableColumn fx:id="LocationBar" prefWidth="68.0" text="Location" />
+                <TableColumn fx:id="ValueBar" prefWidth="49.0" text="Value" />
+                  <TableColumn fx:id="ThreadsList" prefWidth="127.0" text="ThreadsList" />
+              </columns>
+            </TableView>
+            <Text layoutX="347.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cyclic Barrier" textAlignment="CENTER" wrappingWidth="244.0" />
+         </children>
+      </Group>
+   </children>
+</StackPane>

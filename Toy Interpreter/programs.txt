@@ -1,0 +1,1782 @@
+ID:12
+ExeStack:
+newH(v1,2);newH(v2,3);newH(v3,4);NewBarrierStmt(cnt, rH(v3);)
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+OutputList:
+Heap:
+LockTable:
+=============================================
+ID:12
+ExeStack:
+newH(v1,2);
+newH(v2,3);newH(v3,4);NewBarrierStmt(cnt, rH(v3);)
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+OutputList:
+Heap:
+LockTable:
+=============================================
+ID:12
+ExeStack:
+newH(v2,3);newH(v3,4);NewBarrierStmt(cnt, rH(v3);)
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+v1-->1
+OutputList:
+Heap:
+1-->2
+LockTable:
+=============================================
+ID:12
+ExeStack:
+newH(v2,3);
+newH(v3,4);NewBarrierStmt(cnt, rH(v3);)
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+v1-->1
+OutputList:
+Heap:
+1-->2
+LockTable:
+=============================================
+ID:12
+ExeStack:
+newH(v3,4);NewBarrierStmt(cnt, rH(v3);)
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+v1-->1
+v2-->2
+OutputList:
+Heap:
+1-->2
+2-->3
+LockTable:
+=============================================
+ID:12
+ExeStack:
+newH(v3,4);
+NewBarrierStmt(cnt, rH(v3);)
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+v1-->1
+v2-->2
+OutputList:
+Heap:
+1-->2
+2-->3
+LockTable:
+=============================================
+ID:12
+ExeStack:
+NewBarrierStmt(cnt, rH(v3);)
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->2
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->2
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))
+ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->2
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->2
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v1, rH(v1); * 10);rH(v1);Await(cnt)
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->2
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)
+ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->2
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v1, rH(v1); * 10);
+rH(v1);Await(cnt)
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->2
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+rH(v1);Await(cnt)
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)wH(v2, rH(v2); * 10);rH(v2);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)
+Await(cnt)2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+rH(v1);
+Await(cnt)
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)
+wH(v2, rH(v2); * 10);rH(v2);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+Await(cnt)2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)
+wH(v2, rH(v2); * 10);rH(v2);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+Await(cnt)
+2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)
+wH(v2, rH(v2); * 10);rH(v2);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)
+wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+Await(cnt)
+2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v2, rH(v2); * 10);rH(v2);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v2, rH(v2); * 10);
+rH(v2);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v3, rH(v3); * 10);
+wH(v3, rH(v3); * 10);rH(v3);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+2000
+Heap:
+1-->20
+2-->30
+3-->40
+LockTable:
+=============================================
+ID:120
+ExeStack:
+rH(v2);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+2000
+Heap:
+1-->20
+2-->30
+3-->40
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v3, rH(v3); * 10);rH(v3);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+2000
+Heap:
+1-->20
+2-->30
+3-->40
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+2000
+30
+Heap:
+1-->20
+2-->30
+3-->40
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v3, rH(v3); * 10);
+rH(v3);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+2000
+30
+Heap:
+1-->20
+2-->30
+3-->40
+LockTable:
+=============================================
+ID:120
+ExeStack:
+rH(v3);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+2000
+30
+Heap:
+1-->20
+2-->30
+3-->400
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+2000
+30
+400
+Heap:
+1-->20
+2-->30
+3-->400
+LockTable:
+=============================================
+ID:10
+ExeStack:
+v = 0
+While(v < 3){ForkStmt(vv = v + 1)v = v + 1}Sleep(15)v * 10
+Symbol Table:
+OutputList:
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+While(v < 3){ForkStmt(vv = v + 1)v = v + 1}Sleep(15)v * 10
+Symbol Table:
+v-->0
+OutputList:
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+While(v < 3){ForkStmt(vv = v + 1)v = v + 1}
+Sleep(15)v * 10
+Symbol Table:
+v-->0
+OutputList:
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+ForkStmt(vv = v + 1)
+v = v + 1
+While(v < 3){ForkStmt(vv = v + 1)v = v + 1}
+Sleep(15)v * 10
+Symbol Table:
+v-->0
+OutputList:
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+v = v + 1
+While(v < 3){ForkStmt(vv = v + 1)v = v + 1}
+Sleep(15)v * 10
+Symbol Table:
+v-->0
+OutputList:
+Heap:
+LockTable:
+=============================================
+ID:100
+ExeStack:
+vv = v + 1
+Symbol Table:
+v-->0
+OutputList:
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+While(v < 3){ForkStmt(vv = v + 1)v = v + 1}
+Sleep(15)v * 10
+Symbol Table:
+v-->1
+OutputList:
+Heap:
+LockTable:
+=============================================
+ID:100
+ExeStack:
+v
+v = v + 1
+Symbol Table:
+v-->0
+OutputList:
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+ForkStmt(vv = v + 1)
+v = v + 1
+While(v < 3){ForkStmt(vv = v + 1)v = v + 1}
+Sleep(15)v * 10
+Symbol Table:
+v-->1
+OutputList:
+0
+Heap:
+LockTable:
+=============================================
+ID:100
+ExeStack:
+v = v + 1
+Symbol Table:
+v-->0
+OutputList:
+0
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+v = v + 1
+While(v < 3){ForkStmt(vv = v + 1)v = v + 1}
+Sleep(15)v * 10
+Symbol Table:
+v-->1
+OutputList:
+0
+Heap:
+LockTable:
+=============================================
+ID:100
+ExeStack:
+Symbol Table:
+v-->1
+OutputList:
+0
+Heap:
+LockTable:
+=============================================
+ID:100
+ExeStack:
+vv = v + 1
+Symbol Table:
+v-->1
+OutputList:
+0
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+While(v < 3){ForkStmt(vv = v + 1)v = v + 1}
+Sleep(15)v * 10
+Symbol Table:
+v-->2
+OutputList:
+0
+Heap:
+LockTable:
+=============================================
+ID:100
+ExeStack:
+v
+v = v + 1
+Symbol Table:
+v-->1
+OutputList:
+0
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+ForkStmt(vv = v + 1)
+v = v + 1
+While(v < 3){ForkStmt(vv = v + 1)v = v + 1}
+Sleep(15)v * 10
+Symbol Table:
+v-->2
+OutputList:
+0
+1
+Heap:
+LockTable:
+=============================================
+ID:100
+ExeStack:
+v = v + 1
+Symbol Table:
+v-->1
+OutputList:
+0
+1
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+v = v + 1
+While(v < 3){ForkStmt(vv = v + 1)v = v + 1}
+Sleep(15)v * 10
+Symbol Table:
+v-->2
+OutputList:
+0
+1
+Heap:
+LockTable:
+=============================================
+ID:100
+ExeStack:
+Symbol Table:
+v-->2
+OutputList:
+0
+1
+Heap:
+LockTable:
+=============================================
+ID:100
+ExeStack:
+vv = v + 1
+Symbol Table:
+v-->2
+OutputList:
+0
+1
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+While(v < 3){ForkStmt(vv = v + 1)v = v + 1}
+Sleep(15)v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+Heap:
+LockTable:
+=============================================
+ID:100
+ExeStack:
+v
+v = v + 1
+Symbol Table:
+v-->2
+OutputList:
+0
+1
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(15)v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:100
+ExeStack:
+v = v + 1
+Symbol Table:
+v-->2
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(15)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:100
+ExeStack:
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(14)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(13)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(12)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(11)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(10)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(9)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(8)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(7)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(6)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(5)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(4)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(3)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(2)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(1)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Sleep(0)
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+v * 10
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+Heap:
+LockTable:
+=============================================
+ID:10
+ExeStack:
+Symbol Table:
+v-->3
+OutputList:
+0
+1
+2
+30
+Heap:
+LockTable:
+=============================================
+ID:12
+ExeStack:
+newH(v1,2);newH(v2,3);newH(v3,4);NewBarrierStmt(cnt, rH(v3);)
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+OutputList:
+Heap:
+LockTable:
+=============================================
+ID:12
+ExeStack:
+newH(v1,2);
+newH(v2,3);newH(v3,4);NewBarrierStmt(cnt, rH(v3);)
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+OutputList:
+Heap:
+LockTable:
+=============================================
+ID:12
+ExeStack:
+newH(v2,3);newH(v3,4);NewBarrierStmt(cnt, rH(v3);)
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+v1-->1
+OutputList:
+Heap:
+1-->2
+LockTable:
+=============================================
+ID:12
+ExeStack:
+newH(v2,3);
+newH(v3,4);NewBarrierStmt(cnt, rH(v3);)
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+v1-->1
+OutputList:
+Heap:
+1-->2
+LockTable:
+=============================================
+ID:12
+ExeStack:
+newH(v3,4);NewBarrierStmt(cnt, rH(v3);)
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+v1-->1
+v2-->2
+OutputList:
+Heap:
+1-->2
+2-->3
+LockTable:
+=============================================
+ID:12
+ExeStack:
+newH(v3,4);
+NewBarrierStmt(cnt, rH(v3);)
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+v1-->1
+v2-->2
+OutputList:
+Heap:
+1-->2
+2-->3
+LockTable:
+=============================================
+ID:12
+ExeStack:
+NewBarrierStmt(cnt, rH(v3);)
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->2
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->2
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+ForkStmt(wH(v1, rH(v1); * 10);rH(v1);Await(cnt))
+ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->2
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->2
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v1, rH(v1); * 10);rH(v1);Await(cnt)
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->2
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+ForkStmt(Await(cnt)wH(v2, rH(v2); * 10);rH(v2);)
+ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->2
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v1, rH(v1); * 10);
+rH(v1);Await(cnt)
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->2
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)Await(cnt)2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+rH(v1);Await(cnt)
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)wH(v2, rH(v2); * 10);rH(v2);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+ForkStmt(Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);)
+Await(cnt)2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+rH(v1);
+Await(cnt)
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)
+wH(v2, rH(v2); * 10);rH(v2);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+Await(cnt)2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)
+wH(v2, rH(v2); * 10);rH(v2);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+Await(cnt)
+2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)
+wH(v2, rH(v2); * 10);rH(v2);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Await(cnt)
+wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+Await(cnt)
+2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v2, rH(v2); * 10);rH(v2);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v3, rH(v3); * 10);wH(v3, rH(v3); * 10);rH(v3);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+2000
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v2, rH(v2); * 10);
+rH(v2);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v3, rH(v3); * 10);
+wH(v3, rH(v3); * 10);rH(v3);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+Heap:
+1-->20
+2-->3
+3-->4
+LockTable:
+=============================================
+ID:12
+ExeStack:
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+2000
+Heap:
+1-->20
+2-->30
+3-->40
+LockTable:
+=============================================
+ID:120
+ExeStack:
+rH(v2);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+2000
+Heap:
+1-->20
+2-->30
+3-->40
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v3, rH(v3); * 10);rH(v3);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+2000
+Heap:
+1-->20
+2-->30
+3-->40
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+2000
+30
+Heap:
+1-->20
+2-->30
+3-->40
+LockTable:
+=============================================
+ID:120
+ExeStack:
+wH(v3, rH(v3); * 10);
+rH(v3);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+2000
+30
+Heap:
+1-->20
+2-->30
+3-->40
+LockTable:
+=============================================
+ID:120
+ExeStack:
+rH(v3);
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+2000
+30
+Heap:
+1-->20
+2-->30
+3-->400
+LockTable:
+=============================================
+ID:120
+ExeStack:
+Symbol Table:
+cnt-->0
+v1-->1
+v2-->2
+v3-->3
+OutputList:
+20
+2000
+30
+400
+Heap:
+1-->20
+2-->30
+3-->400
+LockTable:
+=============================================
